@@ -1,9 +1,0 @@
-apiVersion: serving.knative.dev/v1
-kind: Service
-metadata:
-  name: cloud-run-demo-stage
-spec:
-  template:
-    spec:
-      containers:
-        - image: gcr.io/grid-assessor/cloud-run-demo-stage:latest
