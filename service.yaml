@@ -5,7 +5,7 @@ metadata:
 spec:
   template:
     metadata:
-      name: v0.0.4
+      name: cloud-run-demo-v005
     spec:
       containers:
         - image: gcr.io/grid-assessor/cloud-run-demo:latest
