@@ -8,10 +8,14 @@ steps:
   - cloud-run-demo
   - --image=gcr.io/$PROJECT_ID/cloud-run-demo:latest
   - --revision-suffix=$SHORT_SHA
-  - --region=us-central1
+#  - --region=us-central1
   - --no-traffic
   - --cpu=1
   - --memory=4G
   - --min-instances=0
   - --max-instances=10
-  - --allow-unauthenticated
+#  - --allow-unauthenticated
+  - --platform=gke
+  - --cluster=infrastructure-production
+  - --cluster-location=us-central1
+  - --namespace=default
