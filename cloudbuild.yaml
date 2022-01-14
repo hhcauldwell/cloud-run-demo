@@ -1,0 +1,17 @@
+steps:
+#- name: gcr.io/cloud-builders/gcloud
+#  args: ["builds", "submit", "--pack", "image=gcr.io/$PROJECT_ID/cloud-run-demo:latest"]
+- name: gcr.io/cloud-builders/gcloud
+  args:
+  - run
+  - deploy
+  - cloud-run-demo
+  - --image=gcr.io/$PROJECT_ID/cloud-run-demo:latest
+  - --revision-suffix=$SHORT_SHA
+  - --region=us-central1
+  - --no-traffic
+  - --cpu=1
+  - --memory=4G
+  - --min-instances=0
+  - --max-instances=10
+  - --allow-unauthenticated
