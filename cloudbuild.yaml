@@ -8,7 +8,7 @@ steps:
   - cloud-run-demo
   - --image=gcr.io/$PROJECT_ID/cloud-run-demo:latest
   - --region=us-central1
-  - --revision-suffix=v0.0.0
+  - --revision-suffix=v0-0-0
  #- --no-traffic
   - --cpu=1
   - --memory=4G
