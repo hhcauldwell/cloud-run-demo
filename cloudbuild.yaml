@@ -15,4 +15,4 @@ steps:
   - --min-instances=$_MIN_INSTANCES
   - --max-instances=$_MAX_INSTANCES
   - --allow-unauthenticated
-  - --set-env-vars=NAME=Bob
+  - --set-env-vars=NAME=Hannah
