@@ -13,7 +13,7 @@ resource "google_cloudbuild_trigger" "prod" {
   substitutions = {
     _SERVICE       = "cloud-run-demo"
     _CPUS          = 1
-    _MEMORY        = 2G
+    _MEMORY        = "2G"
     _MIN_INSTANCES = 1
     _MAX_INSTANCES = 10
   }
