@@ -1,6 +1,6 @@
 resource "google_cloudbuild_trigger" "slots" {
   for_each = var.slots
-  name     = var.service
+  name     = each.key
   project  = var.project
   disabled = false
   filename = "cloudbuild.yaml"
