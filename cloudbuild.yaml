@@ -15,4 +15,4 @@ steps:
   - --max-instances=$_MAX_INSTANCES
   - --allow-unauthenticated
   - --set-env-vars=NAME=Hannah
-  - $_CANARY
+  -$_CANARY
