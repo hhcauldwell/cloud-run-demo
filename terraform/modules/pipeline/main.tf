@@ -17,6 +17,5 @@ resource "google_cloudbuild_trigger" "slots" {
     _MEMORY        = each.value.memory
     _MIN_INSTANCES = each.value.min
     _MAX_INSTANCES = each.value.max
-    _CANARY        = each.value.canary ? "--no-traffic" : ""
   }
 }
