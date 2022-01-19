@@ -17,5 +17,6 @@ variable slots {
     memory = string
     min = number
     max = number
+    canary = bool
   }))
 }
