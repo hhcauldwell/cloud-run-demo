@@ -10,7 +10,6 @@ module "pipeline" {
       memory = "1G"
       min    = 3
       max    = 10
-      canary = true
     },
     "cloud-run-demo-stage": {
       branch = "stage"
@@ -18,7 +17,6 @@ module "pipeline" {
       memory = "1G"
       min    = 0
       max    = 10
-      canary = false
     },
     "cloud-run-demo-test": {
       branch = "test"
@@ -26,7 +24,6 @@ module "pipeline" {
       memory = "1G"
       min    = 0
       max    = 3
-      canary = false
     }
   }
 }

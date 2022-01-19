@@ -14,5 +14,5 @@ steps:
   - --min-instances=$_MIN_INSTANCES
   - --max-instances=$_MAX_INSTANCES
   - --allow-unauthenticated
-  - $_CANARY
   - --set-env-vars=NAME=Hannah
+#  - --no-traffic
